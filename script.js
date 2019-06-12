@@ -11,9 +11,11 @@ document.getElementById('p1text').innerHTML = diceNum1
 
 if (totalScore >= 21) {
    alert(`Winner! You reached ${totalScore}`)
+   window.location.reload()
    totalScore = 0
 } else if (diceGenerate1 == 1) {
    alert(`Game Over! You only reached ${totalScore}`)
+   window.location.reload()
    totalScore = 0
 }
 
